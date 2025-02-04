@@ -17,10 +17,10 @@ codestrength = len(key['A'])
 charlist = flipdictionary(key)
 
 #Debug logging
-print(charlist)
-print(codestrength)
+#print(charlist)
+print(f"Detected codestrength: {codestrength}\n")
 
-print(f"Codes assigned\n")
+print(f"Codes assigned...\n")
 encryptedmessage = input(f"Enter encrypted message:\n")
 decryptedmessage = ''
 

@@ -3,7 +3,7 @@ import string
 import json
 
 #The function that assigns codes to characters
-codestrength = int(input(f"How strong do you want the encryption to be? (Currently only numbers 1 - 9 is supported.)\n"))
+codestrength = int(input(f"How strong do you want the encryption to be? (Minimum of 2)\n\n"))
 
 def makechar(codestrength):
     character = random.choice(string.digits)
@@ -15,7 +15,7 @@ def makechar(codestrength):
 
 #Assign code to each letter of the alphabet
 charlist = {}
-for c in string.ascii_uppercase:
+for c in string.ascii_uppercase + string.ascii_lowercase + " " + "?" + "!":
     charlist[c] = makechar(codestrength)
 
 print(f'Generated codes: \n\n{charlist}')

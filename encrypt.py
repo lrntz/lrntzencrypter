@@ -10,17 +10,17 @@ def importkey():
 
 charlist = importkey()
 codestrength = str(len(charlist['A']))
-print(codestrength)
+print(f'Codestrength detected: {codestrength}\n')
 
-print(f"Codes assigned\n")
+print(f"Codes assigned...\n")
 
-rawmessage = input(f"Enter your message (Message can be typed in both upper and lowercase, but message will always be decrypted in uppercase.):\n")
+rawmessage = input(f"Enter your message (Message can be typed in both upper and lowercase, but message will always be decrypted in uppercase.):\n\n")
 
 print(f"Encrypting your message...\n")
 
 encryptedmessage = ''
 
 for n in rawmessage:
-    encryptedmessage += str(charlist[n.upper()])
+    encryptedmessage += str(charlist[n])
 
 print(encryptedmessage)

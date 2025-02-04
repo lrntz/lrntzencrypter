@@ -1,6 +1,9 @@
 # lrntzencrypter
 A simple encryption/decryption program for sending messages.
 
+## Important
+High code strength (Around 100) has a tendency to not work.
+
 ## How to use:
 
 1. Generate code using `keygenerate.py`
