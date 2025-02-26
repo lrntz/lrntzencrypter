@@ -18,8 +18,11 @@ def makechar(codestrength):
 
 #Assign code to each letter of the alphabet
 charlist = {}
-for c in string.ascii_uppercase + string.ascii_lowercase + " " + "?" + "!":
-    charlist[c] = makechar(codestrength)
+for c in string.ascii_uppercase + string.ascii_lowercase + " æøåÆØÅ?!%":
+    charcode = ''
+    while charcode == '' or charcode in charlist.values():
+        charcode = makechar(codestrength)
+    charlist[c] = charcode
 
 print(f'Generated codes: \n\n{charlist}')
 
