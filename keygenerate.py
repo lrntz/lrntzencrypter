@@ -18,7 +18,7 @@ def makechar(codestrength):
 
 #Assign code to each letter of the alphabet
 charlist = {}
-for c in string.ascii_uppercase + string.ascii_lowercase + " æøåÆØÅ?!%":
+for c in string.ascii_uppercase + string.ascii_lowercase + " æøåÆØÅ?!%" + "0123456789":
     charcode = ''
     while charcode == '' or charcode in charlist.values():
         charcode = makechar(codestrength)
