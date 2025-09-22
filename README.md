@@ -2,7 +2,7 @@
 A simple encryption/decryption program for sending messages.
 
 ## Important
-High code strength (Around 100) has a tendency to not work.
+High code strength (Around 100) has a tendency to not work. (Will be patched. eventually.)
 
 ## How to use:
 
